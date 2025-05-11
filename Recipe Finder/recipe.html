@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <header>
+        <div class="header-image"></div>
+        <div class="logo-container">
+            <img src="Web images/Logo.png" alt="Recipe Finder Logo" class="logo">
+        </div>
+        <button id="home-button" class="home-btn"><i class="fas fa-home"></i>Home</button>
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h2>Welcome to the Recipe Finder!</h2>
+            <p>Discover and interact with a variety of delicious recipes. Use the search bar below to find your favorite recipes and get detailed instructions on how to prepare them. Enjoy cooking!</p>
+        </section>
+        <section id="search-section">
+            <input type="text" id="search-bar" placeholder="Search for a recipe...">
+            <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+        </section>
+        <section id="recipe-list-section">
+            <h2>Recipes:</h2>
+            <ul id="recipe-list"></ul>
+        </section>
+        <section id="recipe-details-section">
+            <div class="container">
+                <h2>Recipe Details:</h2>
+                <div id="recipe-details"></div>
+            </div>
+        </section>
+    </main>
+    <script src="recipe.js"></script>
+</body>
+</html>
